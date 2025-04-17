@@ -1,0 +1,32 @@
+---
+- hosts: local
+  tasks:
+    - name: Install necessary packages
+      package:
+        name:
+          - git
+          - nvim
+          - firefox
+          - telegram-desktop   # Telegram
+          - rofi                # Rofi
+          - thunar              # Thunar
+          - flameshot           # Flameshot
+          - wezterm             # WezTerm
+          - vlc                 # VLC media player
+          - qalculate           # Qalculate!
+          - btop                # btop
+          - obs-studio          # OBS Studio
+          - gcc                 # GCC compiler
+          - make                # Make utility
+          - cmake               # CMake build system
+          - gcc-c++             # C++ support for GCC
+          - feh                 # Lightweight image viewer
+          - redshift            # Adjusts color temperature
+          - dunst               # Lightweight notification daemon
+          - fzf                 # Command-line fuzzy finder
+          - zoxide              # Smart cd command
+          - tmux                # Terminal multiplexer
+          - fastfetch           # Fast fetching tool for system information
+          - gdb                 # GNU Debugger
+        state: present
+
