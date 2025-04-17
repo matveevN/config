@@ -1,0 +1,26 @@
+{
+  "inlayHint.enable": false,
+    "pairs.enableCharacters": [],
+  "pairs.disableCharacters": ["{", "[", "'", "\""],
+//  "suggest.autoTrigger": "none"
+
+
+    "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "args": [
+                "--header-insertion=never"
+            ]
+        }
+    },
+    "diagnostic.filterMessages": [
+        {
+            "pattern": "unknown type name",
+            "filetypes": ["cpp", "c"]
+        },
+        {
+            "pattern": "file not found",
+            "filetypes": ["cpp", "c"]
+        }
+    ]
+}
